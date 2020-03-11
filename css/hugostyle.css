@@ -1,0 +1,147 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/bgstatic-01.png");
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+
+    background-position: top;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+}
+
+.grid-box {
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+    min-width: 520px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.left-lane {
+    background-color: red;
+    height: 100%;
+    opacity: .3;
+}
+
+.middle-lane {
+
+    height: 100%;
+
+}
+
+.right-lane {
+    background-color: green;
+    height: 100%;
+    opacity: .3;
+}
+
+.hugo {
+    position: absolute;
+    z-index: 2;
+    bottom: 3vh;
+    height: 200px;
+    width: 200px;
+    background-image: url("../img/hugojump-01.png");
+    background-size: auto 100%;
+    -webkit-animation: jump 3s infinite steps(5);
+    animation: jump 5s ease-in-out infinite steps(5);
+
+}
+
+@-webkit-keyframes jump {
+
+    to {
+        background-position-x: -1000%;
+
+    }
+}
+
+@keyframes jump {
+
+    to {
+        background-position-x: -1000%;
+
+    }
+}
+
+.hd-txt {
+    background-image: url("../img/helptext-01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    top: 1vh;
+    height: 288px;
+    width: 500px;
+    -webkit-animation: bloat .7s ease-out infinite;
+    animation: bloat 2s ease-out infinite;
+}
+
+
+
+
+@-webkit-keyframes bloat {
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+}
+
+
+
+
+@keyframes bloat {
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+
+    }
+}
+
+.hdcontainer {
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    left: 31%;
+}
