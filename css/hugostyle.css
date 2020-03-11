@@ -31,9 +31,7 @@ body {
 
 
 .left-lane {
-    background-color: red;
     height: 100%;
-    opacity: .3;
 }
 
 .middle-lane {
@@ -43,9 +41,7 @@ body {
 }
 
 .right-lane {
-    background-color: green;
     height: 100%;
-    opacity: .3;
 }
 
 .hugo {
