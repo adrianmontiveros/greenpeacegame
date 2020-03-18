@@ -57,10 +57,44 @@ body {
 
 }
 
-@-webkit-keyframes jump {
+.hugorun {
+    position: absolute;
+    z-index: 2;
+    bottom: 3vh;
+    height: 200px;
+    width: 200px;
+    background-image: url("../img/hugorun-01.png");
+    background-size: auto 100%;
+    -webkit-animation: run 3s infinite steps(8);
+    animation: run 3s ease-in-out infinite steps(8);
+
+}
+
+.hugoturn {
+    position: absolute;
+    z-index: 2;
+    bottom: 3vh;
+    height: 200px;
+    width: 200px;
+    background-image: url("../img/hugoturn-01.png");
+    background-size: auto 100%;
+    -webkit-animation: turn 3s infinite steps(10);
+    animation: turn 3s ease-in-out infinite steps(10);
+
+}
+
+@keyframes turn {
 
     to {
         background-position-x: -1000%;
+
+    }
+}
+
+@keyframes run {
+
+    to {
+        background-position-x: -800%;
 
     }
 }
@@ -72,6 +106,8 @@ body {
 
     }
 }
+
+
 
 .hd-txt {
     background-image: url("../img/helptext-01.png");
@@ -86,32 +122,6 @@ body {
     -webkit-animation: bloat .7s ease-out infinite;
     animation: bloat 2s ease-out infinite;
 }
-
-
-
-
-@-webkit-keyframes bloat {
-
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-
-    }
-
-    50% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-
-    }
-}
-
-
 
 
 @keyframes bloat {
