@@ -65,8 +65,8 @@ body {
     width: 200px;
     background-image: url("../img/hugorun-01.png");
     background-size: auto 100%;
-    -webkit-animation: run 3s infinite steps(8);
-    animation: run 3s ease-in-out infinite steps(8);
+    -webkit-animation: run 2s infinite steps(8);
+    animation: run 2s ease-in-out infinite steps(8);
 
 }
 
@@ -78,8 +78,8 @@ body {
     width: 200px;
     background-image: url("../img/hugoturn-01.png");
     background-size: auto 100%;
-    -webkit-animation: turn 3s infinite steps(10);
-    animation: turn 3s ease-in-out infinite steps(10);
+    -webkit-animation: turn 2s infinite steps(10);
+    animation: turn 2s ease-in-out infinite steps(10);
 
 }
 
